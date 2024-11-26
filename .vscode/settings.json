@@ -1,0 +1,6 @@
+{
+    "dotnet.defaultSolution": "WwatermelonWebsite.sln",
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "WwatermelonWebsite\\bin\\Release\\net6.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/49b43d18-93c5-4bd3-96fb-acf4dc509c7a/resourceGroups/ApplicationsandProgramming/providers/Microsoft.Web/sites/ProjectWatermelon"
+}
