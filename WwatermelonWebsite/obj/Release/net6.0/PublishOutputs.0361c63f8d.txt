@@ -1,0 +1,7 @@
+C:\Users\Mojito\Documents\WatermelonWebsite\WwatermelonWebsite\bin\Release\net6.0\publish\WwatermelonWebsite.exe
+C:\Users\Mojito\Documents\WatermelonWebsite\WwatermelonWebsite\bin\Release\net6.0\publish\appsettings.Development.json
+C:\Users\Mojito\Documents\WatermelonWebsite\WwatermelonWebsite\bin\Release\net6.0\publish\appsettings.json
+C:\Users\Mojito\Documents\WatermelonWebsite\WwatermelonWebsite\bin\Release\net6.0\publish\WwatermelonWebsite.dll
+C:\Users\Mojito\Documents\WatermelonWebsite\WwatermelonWebsite\bin\Release\net6.0\publish\WwatermelonWebsite.deps.json
+C:\Users\Mojito\Documents\WatermelonWebsite\WwatermelonWebsite\bin\Release\net6.0\publish\WwatermelonWebsite.runtimeconfig.json
+C:\Users\Mojito\Documents\WatermelonWebsite\WwatermelonWebsite\bin\Release\net6.0\publish\WwatermelonWebsite.pdb
