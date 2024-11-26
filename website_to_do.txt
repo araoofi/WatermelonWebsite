@@ -1,0 +1,32 @@
+TO DO:
+-download Github, download VSCode, clone the github repository on k laptop
+-creating your landing page ->how to do "asp.net core with html landing page" figure out how to make an html file the default landing page. 
+-use javascript to validate that the text input of the brand request form is a valid email address before the form is submitted. 
+
+
+
+
+-how to bind data to a dropdown
+requested_brands
+ 	- category_id
+
+
+brand_list
+	-category_id
+
+
+table "categories_table"
+	category_id,  //1
+	category_name //Makeup 
+
+
+
+dropdown 
+	<dropdown id="drpRequestedBrandCategroy" value="<<category_id>>" text="category_name"> </dropdown>
+	<dropdown id="drpRequestedBrandCategroy" value="<<category_id>>">category_name</dropdown>
+
+
+--sql query "Select category_id, category_name from [dbo].[categories_table]"
+--store the results of the query in a c# data object
+--create a dropdown and bind the data to the dropdown
+https://www.c-sharpcorner.com/UploadFile/rohatash/binding-dropdownlist-with-database-and-display-data-in-gridv/

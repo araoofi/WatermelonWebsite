@@ -1,0 +1,8 @@
+Framework is ASP.NET
+Database is Microsoft Sql Server using Azure as the server host, with SQL language of T-SQL, managed via Microsoft Sql Server Management studio (SSMS)
+Web server is hosted on Azure
+
+Chosen for easy, seemless interactions/integration of database with framework and framework with Azure, since it is all microsoft and therefore high in compatibility
+
+Backend for website is in C#, for server-side functionality allowing for connections and interactions with the database
+Front end is ASP.NET markup language with HTML, CSS for styling, and Javascript for front end interface interactions
