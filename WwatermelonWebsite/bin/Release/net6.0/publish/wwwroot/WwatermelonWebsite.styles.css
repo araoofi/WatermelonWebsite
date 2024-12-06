@@ -1,49 +1,75 @@
 /* _content/WwatermelonWebsite/Views/Shared/_Layout.cshtml.rz.scp.css */
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand[b-iosc5p6qee] {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+.navbar[b-iosc5p6qee] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #497650 !important;  
+  border-bottom: 1px solid #497650; 
 }
 
-a[b-iosc5p6qee] {
-  color: #0077cc;
+
+.navbar .navbar-brand[b-iosc5p6qee] {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000 !important;  
+  text-decoration: none;
 }
 
-.btn-primary[b-iosc5p6qee] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+
+.navbar .nav-pills .nav-link[b-iosc5p6qee] {
+  color: #ffffff !important;  
+  margin-right: 15px;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.nav-pills .nav-link.active[b-iosc5p6qee], .nav-pills .show > .nav-link[b-iosc5p6qee] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.navbar .nav-pills .nav-link:hover[b-iosc5p6qee] {
+  color: #ff0000 !important;  
 }
 
-.border-top[b-iosc5p6qee] {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom[b-iosc5p6qee] {
-  border-bottom: 1px solid #e5e5e5;
+.navbar .nav-pills .nav-link.active[b-iosc5p6qee] {
+  color: #ff0000 !important;  
+  font-weight: bold;
 }
 
-.box-shadow[b-iosc5p6qee] {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+
+.navbar input[type="text"][b-iosc5p6qee] {
+  padding: 6px 10px;
+  border: 2px solid #000000 !important;  
+  border-radius: 20px;
 }
 
-button.accept-policy[b-iosc5p6qee] {
-  font-size: 1rem;
-  line-height: inherit;
+.navbar input[type="text"]:focus[b-iosc5p6qee] {
+  border-color: #28a745 !important;  
 }
 
-.footer[b-iosc5p6qee] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+
+body[b-iosc5p6qee] {
+  background-color: #e0e0e0 !important;
+  background-image: 
+    linear-gradient(45deg, #000000 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #000000 75%);
+  background-size: 20px 20px !important;
+  background-position: 0 0, 10px 10px !important;
+  background-repeat: repeat !important;
+}
+
+
+footer[b-iosc5p6qee] {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+footer a[b-iosc5p6qee] {
+  color: #ff0000 !important;  
+}
+
+footer a:hover[b-iosc5p6qee] {
+  color: #ffffff !important;  
+}
+
+
+.text-dark[b-iosc5p6qee] {
+  color: #000000 !important; 
 }

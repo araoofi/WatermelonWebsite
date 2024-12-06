@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\Mojito\\Documents\\WatermelonWebsite\\WwatermelonWebsite\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\WwatermelonWebsite.bundle.scp.css",
-      "PackagePath": "staticwebassets\\WwatermelonWebsite.mgk0pc25tc.bundle.scp.css"
+      "PackagePath": "staticwebassets\\WwatermelonWebsite.cbucdmqsei.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\Mojito\\Documents\\WatermelonWebsite\\WwatermelonWebsite\\wwwroot\\css\\site.css",
@@ -11,6 +11,10 @@
     {
       "Id": "C:\\Users\\Mojito\\Documents\\WatermelonWebsite\\WwatermelonWebsite\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Mojito\\Documents\\WatermelonWebsite\\WwatermelonWebsite\\wwwroot\\images\\Watermelon.jpg",
+      "PackagePath": "staticwebassets\\images\\Watermelon.jpg"
     },
     {
       "Id": "C:\\Users\\Mojito\\Documents\\WatermelonWebsite\\WwatermelonWebsite\\wwwroot\\js\\site.js",

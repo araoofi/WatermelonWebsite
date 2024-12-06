@@ -1,0 +1,15 @@
+namespace WwatermelonWebsite.Models
+{
+    public class Request
+    {
+        public int Id { get; set; }
+
+        public string EmailAddress { get; set; }
+
+        public string BrandRequest { get; set; }
+
+        public bool IsCorrection { get; set; }
+
+        public string? CorrectionDetails { get; set; }
+    }
+}

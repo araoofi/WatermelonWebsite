@@ -24,6 +24,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 26 Nov 2024 22:23:29 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WwatermelonWebsite/images/Watermelon.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Watermelon.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eRJgVVpv0DzCEWhaX6ud00jzbh6e5HktopmLSXGz3Rs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"100302"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022eRJgVVpv0DzCEWhaX6ud00jzbh6e5HktopmLSXGz3Rs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 04 Dec 2024 04:36:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WwatermelonWebsite/images/Watermelon.nwzve6c7ml.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Watermelon.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nwzve6c7ml"},{"Name":"integrity","Value":"sha256-eRJgVVpv0DzCEWhaX6ud00jzbh6e5HktopmLSXGz3Rs="},{"Name":"label","Value":"_content/WwatermelonWebsite/images/Watermelon.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"100302"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022eRJgVVpv0DzCEWhaX6ud00jzbh6e5HktopmLSXGz3Rs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 04 Dec 2024 04:36:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WwatermelonWebsite/js/site.6b9nfc4n3r.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -721,16 +733,16 @@
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1641"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022WtKlDye/qV68IA2W1tHFTyXyc/HjQvQKBpIK1CEulFM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 26 Nov 2024 22:23:29 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WwatermelonWebsite/WwatermelonWebsite.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\WwatermelonWebsite.mgk0pc25tc.bundle.scp.css'))</AssetFile>
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\WwatermelonWebsite.cbucdmqsei.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ljBjLIbi\u002B6Mgb8OtFXgaWqP3hyX/0GMYF/dgJcoH3Y8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1135"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ljBjLIbi\u002B6Mgb8OtFXgaWqP3hyX/0GMYF/dgJcoH3Y8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 26 Nov 2024 22:29:21 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eAmdtKeGlPwbFpUy3xJ/AnJn5HtGiMXayRZid26iW\u002BE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1672"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eAmdtKeGlPwbFpUy3xJ/AnJn5HtGiMXayRZid26iW\u002BE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 06:10:28 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WwatermelonWebsite/WwatermelonWebsite.mgk0pc25tc.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\WwatermelonWebsite.mgk0pc25tc.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/WwatermelonWebsite/WwatermelonWebsite.cbucdmqsei.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\WwatermelonWebsite.cbucdmqsei.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mgk0pc25tc"},{"Name":"integrity","Value":"sha256-ljBjLIbi\u002B6Mgb8OtFXgaWqP3hyX/0GMYF/dgJcoH3Y8="},{"Name":"label","Value":"_content/WwatermelonWebsite/WwatermelonWebsite.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1135"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ljBjLIbi\u002B6Mgb8OtFXgaWqP3hyX/0GMYF/dgJcoH3Y8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 26 Nov 2024 22:29:21 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cbucdmqsei"},{"Name":"integrity","Value":"sha256-eAmdtKeGlPwbFpUy3xJ/AnJn5HtGiMXayRZid26iW\u002BE="},{"Name":"label","Value":"_content/WwatermelonWebsite/WwatermelonWebsite.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1672"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eAmdtKeGlPwbFpUy3xJ/AnJn5HtGiMXayRZid26iW\u002BE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 06:10:28 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

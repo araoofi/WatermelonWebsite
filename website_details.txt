@@ -1,5 +1,5 @@
 Framework is ASP.NET
-Database is Microsoft Sql Server using Azure as the server host, with SQL language of T-SQL, managed via Microsoft Sql Server Management studio (SSMS)
+Database is Microsoft Sql Server using Azure as the server host, with SQL language of T-SQL, managed via Azure Sql portal 
 Web server is hosted on Azure
 
 Chosen for easy, seemless interactions/integration of database with framework and framework with Azure, since it is all microsoft and therefore high in compatibility

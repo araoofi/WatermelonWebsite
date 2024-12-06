@@ -3,9 +3,45 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<table>
-    <tr>
-        <td>Requestor email address</td>
-        <td><input name="txtEmailAddress" id="txtEmailAddress" accept="email"></td>
-    </tr>
-</table>
+<p style="font-size: 1.2em; color: #555;">
+    At the moment, we are focused on beauty brands, but we hope to expand in the future. 
+    If the brand you're looking for isn't listed, please feel free to submit a request below!
+</p>
+
+<form method="post" action="YourActionMethod" style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; max-width: 600px; margin: 0 auto;">
+    <table style="width: 100%; border-spacing: 10px;">
+        <tr>
+            <td style="font-weight: bold; padding-right: 10px;">Requestor email address</td>
+            <td><input name="txtEmailAddress" id="txtEmailAddress" type="email" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;" required></td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; padding-right: 10px;">Brand Request</td>
+            <td><input name="txtBrandRequest" id="txtBrandRequest" type="text" placeholder="Enter the brand name" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;" required></td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: bold; padding-right: 10px;">Would you like to submit a correction?</td>
+            <td><input type="checkbox" name="chkCorrection" id="chkCorrection" style="margin-right: 10px;"> Yes, I would like to submit a correction</td>
+        </tr>
+        <tr id="correctionTextRow" style="display:none;">
+            <td style="font-weight: bold; padding-right: 10px;">Correction Details</td>
+            <td><textarea name="txtCorrectionDetails" id="txtCorrectionDetails" placeholder="Enter correction details" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;"></textarea></td>
+        </tr>
+    </table>
+
+    <div style="margin-top: 20px;">
+        <button type="submit" style="padding: 10px 20px; background-color: #5cb85c; color: white; border: none; border-radius: 4px; font-size: 16px;">Submit</button>
+    </div>
+</form>
+
+<script>
+    
+    document.getElementById('chkCorrection').addEventListener('change', function() {
+        var correctionTextRow = document.getElementById('correctionTextRow');
+        if (this.checked) {
+            correctionTextRow.style.display = 'table-row';
+        } else {
+            correctionTextRow.style.display = 'none';
+        }
+    });
+</script>
