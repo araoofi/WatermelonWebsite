@@ -249,8 +249,90 @@
       ]
     },
     {
-      "Route": "images/Watermelon.jpg",
-      "AssetFile": "images/Watermelon.jpg",
+      "Route": "images/Watermelon.png",
+      "AssetFile": "images/Watermelon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96076"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ImTum1hravPeUFjznVp96V1+vYNKDhM8bt9K7bDC/ak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Dec 2024 23:01:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ImTum1hravPeUFjznVp96V1+vYNKDhM8bt9K7bDC/ak="
+        }
+      ]
+    },
+    {
+      "Route": "images/Watermelon.yf6xtknqlv.png",
+      "AssetFile": "images/Watermelon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96076"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ImTum1hravPeUFjznVp96V1+vYNKDhM8bt9K7bDC/ak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Dec 2024 23:01:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yf6xtknqlv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ImTum1hravPeUFjznVp96V1+vYNKDhM8bt9K7bDC/ak="
+        },
+        {
+          "Name": "label",
+          "Value": "images/Watermelon.png"
+        }
+      ]
+    },
+    {
+      "Route": "images/_old_watermelon.jpg",
+      "AssetFile": "images/_old_watermelon.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -286,8 +368,8 @@
       ]
     },
     {
-      "Route": "images/Watermelon.nwzve6c7ml.jpg",
-      "AssetFile": "images/Watermelon.jpg",
+      "Route": "images/_old_watermelon.nwzve6c7ml.jpg",
+      "AssetFile": "images/_old_watermelon.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -326,7 +408,7 @@
         },
         {
           "Name": "label",
-          "Value": "images/Watermelon.jpg"
+          "Value": "images/_old_watermelon.jpg"
         }
       ]
     },

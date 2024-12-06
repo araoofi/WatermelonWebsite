@@ -1,15 +1,17 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<section class="watermelon-image">
+                <img src="~/images/watermelon.png" alt="Watermelon" class="img-fluid" style="display: block; margin: 20px auto; width: 100%; max-width: 600px;">
+            </section>
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
 <div class="container mt-5">
     <h3>Search</h3>
-    <form method="get" action="/Search/Index">
+    <form method="get" action="Search/Index">
         <div class="form-group">
             <label for="searchInput">Search by Brand</label>
             <input type="text" id="searchInput" name="query" class="form-control" placeholder="Enter your search query" />
@@ -17,75 +19,3 @@
         <button type="submit" class="btn btn-primary">Search</button>
     </form>
 </div>
-
-@model List<WwatermelonWebsite.Models.BrandAction>
-
-@{
-    ViewData["Title"] = "Search Results";
-}
-
-<h2>Search Results</h2>
-
-@if (Model != null && Model.Any())
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Brand</th>
-                <th>Action</th>
-                <th>Why</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@item.Brand</td>
-                    <td>@item.Action</td>
-                    <td>@item.Why</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
-else
-{
-    <p>No results found.</p>
-}
-
-<div class="container mt-5">
-    <h3>Submit a Brand Request</h3>
-    <form method="post" action="/Request/Submit" style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; max-width: 600px; margin: 0 auto;">
-        <div class="form-group">
-            <label for="EmailAddress">Requestor Email Address</label>
-            <input name="EmailAddress" id="EmailAddress" type="email" class="form-control" placeholder="Enter your email address" required />
-        </div>
-        <div class="form-group">
-            <label for="BrandRequest">Brand Request</label>
-            <input name="BrandRequest" id="BrandRequest" type="text" class="form-control" placeholder="Enter the brand name" required />
-        </div>
-        <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="IsCorrection" name="IsCorrection" />
-            <label class="form-check-label" for="IsCorrection">Is this a correction?</label>
-        </div>
-        <div class="form-group" id="correctionDetailsRow" style="display: none;">
-            <label for="CorrectionDetails">Correction Details</label>
-            <input name="CorrectionDetails" id="CorrectionDetails" type="text" class="form-control" placeholder="Enter correction details" />
-        </div>
-
-        <div style="margin-top: 20px;">
-            <button type="submit" class="btn btn-success">Submit Request</button>
-        </div>
-    </form>
-</div>
-
-<script>
-    document.getElementById('IsCorrection').addEventListener('change', function () {
-        const correctionDetailsRow = document.getElementById('correctionDetailsRow');
-        if (this.checked) {
-            correctionDetailsRow.style.display = 'block';
-        } else {
-            correctionDetailsRow.style.display = 'none';
-        }
-    });
-</script>

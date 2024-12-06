@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WwatermelonWebsite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53458f99cf4dad8d2deae6d18a284f7ffa65ca1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e7ee00fb46e49ed7f59456def80d32087942acb")]
 [assembly: System.Reflection.AssemblyProductAttribute("WwatermelonWebsite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WwatermelonWebsite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

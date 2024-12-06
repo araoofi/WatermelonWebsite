@@ -23,11 +23,20 @@ namespace WwatermelonWebsite.Controllers
                 return View(); 
             }
 
+            // remove any whitespace on left or right
+            query = query.Trim();
+
             var results = _context.BrandActions
                 .Where(b => b.Brand.Contains(query) || b.Action.Contains(query) || b.Why.Contains(query))
                 .ToList();
             
             return View(results);
+        }
+
+        public IActionResult AllBrands()
+        {
+
+            return View(); 
         }
     }
 }

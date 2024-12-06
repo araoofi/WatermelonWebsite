@@ -13,8 +13,12 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Mojito\\Documents\\WatermelonWebsite\\WwatermelonWebsite\\wwwroot\\images\\Watermelon.jpg",
-      "PackagePath": "staticwebassets\\images\\Watermelon.jpg"
+      "Id": "C:\\Users\\Mojito\\Documents\\WatermelonWebsite\\WwatermelonWebsite\\wwwroot\\images\\Watermelon.png",
+      "PackagePath": "staticwebassets\\images\\Watermelon.png"
+    },
+    {
+      "Id": "C:\\Users\\Mojito\\Documents\\WatermelonWebsite\\WwatermelonWebsite\\wwwroot\\images\\_old_watermelon.jpg",
+      "PackagePath": "staticwebassets\\images\\_old_watermelon.jpg"
     },
     {
       "Id": "C:\\Users\\Mojito\\Documents\\WatermelonWebsite\\WwatermelonWebsite\\wwwroot\\js\\site.js",
