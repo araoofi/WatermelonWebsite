@@ -3,6 +3,7 @@ using WwatermelonWebsite.Models;
 using WwatermelonWebsite.Data;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using OfficeOpenXml.Drawing;
 
 namespace WwatermelonWebsite.Controllers
 {
@@ -42,8 +43,8 @@ namespace WwatermelonWebsite.Controllers
         {
             try{
                 if (ModelState.IsValid){
-                    
                     string resp = reqdb.AddRequest(reqmodel);
+                    
                     if(resp != null) {
                         return View("ThankYou");
                     }
