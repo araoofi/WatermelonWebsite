@@ -1,16 +1,26 @@
 using Microsoft.AspNetCore.Mvc;
 using WwatermelonWebsite.Models;
 using WwatermelonWebsite.Data;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace WwatermelonWebsite.Controllers
 {
     public class RequestController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IConfiguration _configuration;
 
-        public RequestController(ApplicationDbContext context)
+        
+
+        List<RequestModel> open_requests_list = new List<RequestModel>();
+
+    
+
+        public RequestController(ApplicationDbContext context, IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration;
         }
 
         public IActionResult Index()
@@ -18,26 +28,66 @@ namespace WwatermelonWebsite.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult Submit(RequestModel model)
+        public IActionResult OpenRequests()
         {
-            if (ModelState.IsValid)
-            {
-                var request = new Request
-                {
-                    EmailAddress = model.EmailAddress,
-                    BrandRequest = model.BrandRequest,
-                    IsCorrection = model.IsCorrection,
-                    CorrectionDetails = model.IsCorrection ? model.CorrectionDetails : null
-                };
+            GetOpenRequests();
+            return View(open_requests_list);
+        }
 
-                _context.Requests.Add(request);
-                _context.SaveChanges();
+        RequestsDBAccessLayer reqdb = new RequestsDBAccessLayer();
 
-                return RedirectToAction("ThankYou");
+        [HttpGet]
+        public IActionResult Submit(){
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Submit([Bind] RequestModel reqmodel)
+        {
+            try{
+                if (ModelState.IsValid){
+                    
+                    string resp = reqdb.AddRequest(reqmodel);
+                    if(resp != null) {
+                        return View("ThankYou");
+                    }
+                    else{
+                        TempData["Msg"] = "Error. Could Not Complete Command.";
+                    }
+                    
+                }
             }
+            catch (Exception ex){
+                TempData["Msg"] = ex.Message;
+            }
+            return View("Index");
+        }
 
-            return View("Index", model);
+        private void GetOpenRequests(){
+            if(open_requests_list.Count > 0){
+                open_requests_list.Clear();
+            }
+            try {
+                SqlConnection conn = new SqlConnection();
+                conn.ConnectionString = _configuration.GetConnectionString("DefaultConnection");
+                conn.Open();
+            
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = "SELECT * FROM [dbo].Requests WHERE Status not like 'Closed' ORDER BY BrandRequest ASC";
+                cmd.Connection = conn;
+                SqlDataReader dr;
+                dr = cmd.ExecuteReader();
+                while(dr.Read()){
+                    open_requests_list.Add(new RequestModel() {BrandRequest = dr["BrandRequest"].ToString(), 
+                                                            DateAdded = dr["DateAdded"].ToString(), 
+                                                            Status = dr["Status"].ToString()});
+                }
+
+                conn.Close();
+            }
+            catch(Exception){
+                throw;
+            }
         }
         public IActionResult ThankYou()
         {

@@ -1,3 +1,5 @@
+@model WwatermelonWebsite.Models.RequestModel
+
 @{
     ViewData["Title"] = "Request Info";
 }
@@ -8,31 +10,49 @@
     If the brand you're looking for isn't listed, please feel free to submit a request below!
 </p>
 
-<form method="post" action="Request/Submit" style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; max-width: 600px; margin: 0 auto;">
+<form method="post" asp-action="Submit" style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; max-width: 600px; margin: 0 auto;">
     <table style="width: 100%; border-spacing: 10px;">
         <tr>
             <td style="font-weight: bold; padding-right: 10px;">Requestor email address</td>
-            <td><input name="txtEmailAddress" id="txtEmailAddress" type="email" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;" required></td>
+            <td><input asp-for="EmailAddress" name="EmailAddress" id="txtEmailAddress" type="email" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;" required ></td>
         </tr>
         <tr>
             <td style="font-weight: bold; padding-right: 10px;">Brand Request</td>
-            <td><input name="txtBrandRequest" id="txtBrandRequest" type="text" placeholder="Enter the brand name" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;" required></td>
+            <td><input asp-for="BrandRequest" name="txtBrandRequest" id="txtBrandRequest" type="text" placeholder="Enter the brand name" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;" required></td>
         </tr>
         
         <tr>
             <td style="font-weight: bold; padding-right: 10px;">Would you like to submit a correction?</td>
-            <td><input type="checkbox" name="chkCorrection" id="chkCorrection" style="margin-right: 10px;"> Yes, I would like to submit a correction</td>
+            <td><input asp-for="IsCorrection" type="checkbox" name="chkCorrection" id="chkCorrection" style="margin-right: 10px;"> Yes, I would like to submit a correction</td>
         </tr>
         <tr id="correctionTextRow" style="display:none;">
             <td style="font-weight: bold; padding-right: 10px;">Correction Details</td>
-            <td><textarea name="txtCorrectionDetails" id="txtCorrectionDetails" placeholder="Enter correction details" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;"></textarea></td>
+            <td><textarea asp-for="CorrectionDetails" name="txtCorrectionDetails" id="txtCorrectionDetails" placeholder="Enter correction details" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;"></textarea></td>
         </tr>
     </table>
 
     <div style="margin-top: 20px;">
-        <button type="submit" style="padding: 10px 20px; background-color: #5cb85c; color: white; border: none; border-radius: 4px; font-size: 16px;">Submit</button>
+        <button type="submit" value="Submit" style="padding: 10px 20px; background-color: #5cb85c; color: white; border: none; border-radius: 4px; font-size: 16px;">Submit</button>
     </div>
 </form>
+
+<div class="container mt-5">
+    <h3>Curious which brands have been requested?</h3>
+    <form method="post" action="Request/OpenRequests" style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; max-width: 600px; margin: 0 auto;">
+        <div style="margin-top: 20px;">
+            <button type="submit" class="btn btn-success">See all requested brands</button>
+        </div>
+    </form>
+    @{  
+    if (@TempData["Msg"] != null)  
+    {  
+        <script>  
+            alert('@TempData["msg"]')  
+        </script>  
+    }  
+}   
+</div>
+
 
 <script>
     

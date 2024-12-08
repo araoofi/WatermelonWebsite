@@ -1,24 +1,33 @@
-@model List<WwatermelonWebsite.Models.BrandAction>
+@model List<WwatermelonWebsite.Models.RequestModel>
 
 @{
-    ViewData["Title"] = "See Current Known Brands";
+    ViewData["Title"] = "Viewing Open Requests";
 }
-
 <h1>@ViewData["Title"]</h1>
 
+<p style="font-size: 1.2em; color: #555;">
+    At the moment, we are focused on beauty brands, but we hope to expand in the future. 
+    If the brand you're looking for isn't listed, please feel free to submit using the link below!
+</p>
+<form method="post" action="/Request/Index" style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; max-width: 600px; margin: 0 auto;">
+        <div></div>
+            <button type="submit" class="btn btn-success">Submit a Request</button>
+        </div>
+    </form>
 
-    <div name="brands-list" class="table">
-        <table>
+<h2>All Open Requests for Brands</h2>
+<div name="disp_requests" class="table" >
+        <table >
             <thead>
                 <tr>
                     <th>
                         Brand
                     </th>
                     <th colspan="2" style="padding-right:10px; width: 25px;">
-                        Action
+                        Date Submitted
                     </th>
                     <th style="text-align:center">
-                        Why
+                        Status
                     </th>
                 </tr>
             </thead>
@@ -26,11 +35,11 @@
                 @if (Model!= null){
                     @foreach (var item in Model){
                         <tr>
-                            <td>@item.Brand</td>
+                            <td>@item.BrandRequest</td>
                             <td colspan="2" style="text-align:center;paddingt:5px 10px; width: 25px; font-weight: 700;">
-                                @item.Action
+                                @item.DateAdded
                                 </td>
-                            <td style="text-align:center;color:gray"><i>@item.Why</i></td>
+                            <td style="text-align:center;color:gray"><i>@item.Status</i></td>
                         </tr>
                     }
                 }
@@ -45,11 +54,3 @@
 
 
 
-<div class="container mt-5">
-    <h3>Don't see the brand you are looking for?</h3>
-    <form method="post" action="/Request/Index" style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; max-width: 600px; margin: 0 auto;">
-        <div style="margin-top: 20px;">
-            <button type="submit" class="btn btn-success">Submit a Request</button>
-        </div>
-    </form>
-</div>

@@ -12,7 +12,7 @@ namespace WwatermelonWebsite.Data
         public DbSet<BrandAction> BrandActions { get; set; }
         public DbSet<Brand> Brands { get; set; }
 
-        public DbSet<Request> Requests { get; set; }
+        public DbSet<RequestModel> RequestModels { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -21,7 +21,7 @@ namespace WwatermelonWebsite.Data
             modelBuilder.Entity<Brand>()
                 .ToTable("Brands", schema: "dbo");
 
-            modelBuilder.Entity<Request>()
+            modelBuilder.Entity<RequestModel>()
                 .ToTable("Requests", schema: "dbo");
 
         }
