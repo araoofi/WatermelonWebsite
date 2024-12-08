@@ -23,10 +23,6 @@ namespace WwatermelonWebsite.Controllers
             _configuration = configuration;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
 
         public IActionResult OpenRequests()
         {
@@ -60,7 +56,7 @@ namespace WwatermelonWebsite.Controllers
             catch (Exception ex){
                 TempData["Msg"] = ex.Message;
             }
-            return View("Index");
+            return View();
         }
 
         private void GetOpenRequests(){
